@@ -5,7 +5,7 @@ export async function chatCompletion(inputPrompt) {
     const messages = [{ role: "user", content: inputPrompt }];
 
     const chatObject = await openai.createChatCompletion({
-      model: "gpt-3.5-turbo", // Correct model name
+      model: "gpt-3.5-turbo",
       messages: messages,
     });
 
